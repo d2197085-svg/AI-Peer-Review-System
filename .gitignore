@@ -1,0 +1,11 @@
+# Python
+backend/venv/
+backend/__pycache__/
+backend/uploads/*.pdf
+
+# React
+frontend/node_modules/
+frontend/dist/
+
+# Security (Don't upload your API key!)
+.env
