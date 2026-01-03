@@ -15,6 +15,9 @@ genai.configure(api_key=API_KEY)
 model = genai.GenerativeModel('gemini-1.5-flash')
 
 app = FastAPI()
+@app.get("/")
+async def root():
+    return {"status": "ReviewerAI System Online", "version": "2.5.0"}
 
 # --- 2. MIDDLEWARE (Crucial for React to talk to Python) ---
 app.add_middleware(
